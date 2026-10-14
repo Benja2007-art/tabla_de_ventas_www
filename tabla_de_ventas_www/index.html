@@ -5,310 +5,349 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo de ventas de productos</title>
+
+    <!-- Aqui enlazo el CSS que esta dentro de la carpeta estilos.css -->
+    <link rel="stylesheet" href="estilos.css/style.css">
 </head>
 
 <body>
-    <h1>Tabla de ventas de productos-Tienda Tecnologica</h1>
-    <div>
-        <table border="1px">
-            <thead>
-                <tr> <!--el rowspan sirve para poner una categoria sobre otra dependiendo 
-                    de cuantos queremos y este comando es visible de manera horizontal-->
-                    <th rowspan="2">Categoria</th>
-                    <th rowspan="2">N*</th>
-                    <th rowspan="2">Imagen</th>
-                    <th rowspan="2">Producto</th>
-                    <th rowspan="2">Descripcion</th>
-                    <th colspan="3">Ventas Mensuales (Unidades )</th> <!--hace lo mismo pero de manera vertical-->
-                    <th rowspan="2">Total unidades</th>
-                    <th rowspan="2">Precio Unitario (USD)</th>
-                    <th rowspan="2">Total de ventas (USD)</th>
+    <!-- El main envuelve todo el contenido y lo centra -->
+    <main>
+        <!-- El header es la parte de arriba con el titulo -->
+        <header>
+            <h1>Tabla de ventas de productos - Tienda Tecnologica</h1>
+            <p>Resumen de productos y ventas del primer trimestre</p>
+        </header>
 
+        <!-- Este div permite hacer scroll horizontal en celulares -->
+        <div class="tabla-contenedor" tabindex="0">
+            <table>
+                <!-- El caption es el titulito que va arriba de la tabla -->
+                <caption>Ventas en enero a marzo - Valores en USD</caption>
 
-                </tr>
-                <tr>
-                    <th>enero</th>
-                    <th>febrero</th>
-                    <th>marzo</th>
-                </tr>
-
-                <tr>
-                    <td rowspan="5">Computadoras acesorios (5 productos)</td>
-                    <td>1</td>
-                    <td></td>
-                    <td>Laptop lenovo idealPad3</td>
-                    <td>Laptop 15.6" Ryxen 5,8GB RAM,512GB SSD</td>
-                    <td>12</td>
-                    <td>15</td>
-                    <td>18</td>
-                    <td>45</td> 
-                    <td>$650.00</td>
-                    <td>$29,250.00</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td></td>
-                    <td>PC de Escritorio HP</td>
-                    <td>Intel Core i5, 16GB RAM, 512GB SSD</td>
-                    <td>8</td>
-                    <td>10</td>
-                    <td>12</td>
-                    <td>30</td>
-                    <td>$750.00</td>
-                    <td>$22,500.00</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td></td>
-                    <td>Monitor Samsung 24"</td>
-                    <td>Monitor IPS 24" Full HD</td>
-                    <td>15</td>
-                    <td>20</td>
-                    <td>18</td>
-                    <td>53</td>
-                    <td>$180.00</td>
-                    <td>$9,540.00</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td></td>
-                    <td>Teclado Mecánico</td>
-                    <td>Teclado RGB, switches azules</td>
-                    <td>25</td>
-                    <td>30</td>
-                    <td>28</td>
-                    <td>83</td>
-                    <td>$45.00</td>
-                    <td>$3,735.00</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td></td>
-                    <td>Mouse Inalámbrico</td>
-                    <td>Mouse óptico ergonómico</td>
-                    <td>30</td>
-                    <td>35</td>
-                    <td>40</td>
-                    <td>105</td>
-                    <td>$25.00</td>
-                    <td>$2,625.00</td>
-                </tr>
-                <tr>
-                    <td rowspan="4">Telefonia (4 productos)</td>
-                    <td>6</td>
-                    <td></td>
-                    <td>iPhone 14</td>
-                    <td>Smartphone 128GB</td>
-                    <td>10</td>
-                    <td>12</td>
-                    <td>15</td>
-                    <td>37</td> 
-                    <td>$850.00</td>
-                    <td>$31,450.00</td>
-                 </tr>  
-                
-                <tr>
-                    <td>7</td>
-                    <td></td>
-                    <td>Samsung Galaxy A54</td>
-                    <td>Smartphone 128GB</td>
-                    <td>18</td>
-                    <td>20</td>
-                    <td>22</td>
-                    <td>60</td> 
-                    <td>$420.00</td>
-                    <td>$25,200.00</td>
-                 </tr>
-                
-                <tr>
-                    <td>8</td>
-                    <td></td>
-                    <td>Audífonos Bluetooth</td>
-                    <td>Audífonos inalámbricos con estuche</td>
-                    <td>25</td>
-                    <td>28</td>
-                    <td>35</td>
-                    <td>88</td> 
-                    <td>$60.00</td>
-                    <td>$5,280.00</td>
-                 </tr>
-
-                <tr>
-                    <td>9</td>
-                    <td></td>
-                    <td>Smartwatch</td>
-                    <td>Reloj inteligente con sensor de salud</td>
-                    <td>12</td>
-                    <td>15</td>
-                    <td>18</td>
-                    <td>45</td> 
-                    <td>$120.00</td>
-                    <td>$5,400.00</td>
-                 </tr> 
+                <!-- Aqui van los encabezados de la tabla -->
+                <thead>
                     <tr>
-                     <td rowspan="4">Eclectrodomesticos (4 producos)</td>
-                      <td>10</td>
-                      <td></td>
-                      <td>Refrigeradora LG</td>
-                      <td>Refrigeradora 280 litros</td>
-                      <td>6</td>
-                      <td>8</td>
-                      <td>10</td>
-                      <td>24</td> 
-                      <td>$780.00</td>
-                      <td>$18,720.00</td>   
+                        <th rowspan="2">Categoria</th>
+                        <th rowspan="2">N°</th>
+                        <th rowspan="2">Imagen</th>
+                        <th rowspan="2">Producto</th>
+                        <th rowspan="2">Descripcion</th>
+                        <th colspan="3">Ventas mensuales (unidades)</th>
+                        <th rowspan="2">Total unidades</th>
+                        <th rowspan="2">Precio unitario (USD)</th>
+                        <th rowspan="2">Total de ventas (USD)</th>
+                    </tr>
+                    <tr>
+                        <th>Enero</th>
+                        <th>Febrero</th>
+                        <th>Marzo</th>
+                    </tr>
+                </thead>
 
-                     </tr> 
-                     <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td>Lavadora Samsung</td>
-                        <td>Lavadora 12 kg</td>
-                        <td>8</td>
-                        <td>10</td>
-                        <td>12</td>
-                        <td>30</td> 
-                        <td>$550.00</td>
-                        <td>$16,500.00</td>
+                <!-- Aqui va el cuerpo de la tabla con todos los datos -->
+                <tbody>
+                    <!-- Categoria: Computadoras y accesorios -->
+                    <tr>
+                        <td rowspan="5" class="categoria">Computadoras y accesorios<small>5 productos</small></td>
+                        <td class="numero">1</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/laptop 1.jfif" alt="Laptop Lenovo IdeaPad 3"></td>
+                        <td class="producto">Laptop Lenovo IdeaPad 3</td>
+                        <td class="descripcion">Laptop 15.6" Ryzen 5, 8GB RAM, 512GB SSD</td>
+                        <td class="numero">12</td>
+                        <td class="numero">15</td>
+                        <td class="numero">18</td>
+                        <td class="numero">45</td>
+                        <td class="dinero">$650.00</td>
+                        <td class="dinero total-ventas">$29,250.00</td>
+                    </tr>
 
-                     </tr>
-                     <td>12</td>
-                        <td></td>
-                        <td>Microondas Oster</td>
-                        <td>Microondas 25 litros</td>
-                        <td>12</td>
-                        <td>15</td>
-                        <td>18</td>
-                        <td>45</td> 
-                        <td>$130.00</td>
-                        <td>$5,850.00</td>
-                     
-                     <tr>
-                        <td>13</td>
-                        <td></td>
-                        <td>Licuadora Philips</td>
-                        <td>Licuadora 600W</td>
-                        <td>20</td>
-                        <td>25</td>
-                        <td>28</td>
-                        <td>73</td> 
-                        <td>$70.00</td>
-                        <td>$5,110.00</td>
+                    <tr>
+                        <td class="numero">2</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/ps de escritorio 2.jfif" alt="PC de Escritorio HP"></td>
+                        <td class="producto">PC de Escritorio HP</td>
+                        <td class="descripcion">Intel Core i5, 16GB RAM, 512GB SSD</td>
+                        <td class="numero">8</td>
+                        <td class="numero">10</td>
+                        <td class="numero">12</td>
+                        <td class="numero">30</td>
+                        <td class="dinero">$750.00</td>
+                        <td class="dinero total-ventas">$22,500.00</td>
+                    </tr>
 
-                     </tr>
-                     <tr>
-                        <td rowspan="4">Hogar y oficina (4 productos)</td>
-                        <td>14</td>
-                        <td></td>
-                        <td>Silla de Oficina</td>
-                        <td>Silla ergonómica</td>
-                        <td>10</td>
-                        <td>12</td>
-                        <td>15</td>
-                        <td>37</td> 
-                        <td>$110.00</td>
-                        <td>$4,070.00</td>
-                     </tr>
-                     <tr>
-                        <td>15</td>
-                        <td></td>
-                        <td>Escritorio</td>
-                        <td>Escritorio para oficina 120cm</td>
-                        <td>8</td>
-                        <td>10</td>
-                        <td>12</td>
-                        <td>30</td> 
-                        <td>$150.00</td>
-                        <td>$4,500.00</td>
-                     </tr>
-                     <tr>
-                        <td>16</td>
-                        <td></td>
-                        <td>Estantería</td>
-                        <td>Estantería de 5 niveles</td>
-                        <td>12</td>
-                        <td>15</td>
-                        <td>18</td>
-                        <td>45</td> 
-                        <td>$90.00</td>
-                        <td>$4,050.00</td>
-                     </tr>
-                     <tr>
-                        <td>17</td>
-                        <td></td>
-                        <td>Lámpara LED</td>
-                        <td>Lámpara de escritorio LED</td>
-                        <td>18</td>
-                        <td>22</td>
-                        <td>25</td>
-                        <td>65</td> 
-                        <td>$35.00</td>
-                        <td>$2,275.00</td>
-                     </tr>
-                     <tr>
-                        <td rowspan="3">Gaming (3 productos)</td>
-                        <td>18</td>
-                        <td></td>
-                        <td>Consola PlayStation 5</td>
-                        <td>Consola PS5 1TB</td>
-                        <td>5</td>
-                        <td>8</td>
-                        <td>10</td>
-                        <td>23</td> 
-                        <td>$550.00</td>
-                        <td>$12,650.00</td>
-                     </tr>
-                     <tr>
-                        <td>19</td>
-                        <td></td>
-                        <td>Control Xbox</td>
-                        <td>Control inalámbrico Xbox Series</td>
-                        <td>18</td>
-                        <td>22</td>
-                        <td>25</td>
-                        <td>65</td> 
-                        <td>$70.00</td>
-                        <td>$4,550.00</td>
-                     </tr>
-                     <tr>
-                        <td>20</td>
-                        <td></td>
-                        <td>Headset Gamer</td>
-                        <td>Audífonos gamer con micrófono</td>
-                        <td>20</td>
-                        <td>28</td>
-                        <td>30</td>
-                        <td>78</td> 
-                        <td>$90.00</td>
-                        <td>$7,020.00</td>
-                     </tr>
-                     <tr>
+                    <tr>
+                        <td class="numero">3</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/monitor3.jfif" alt="Monitor Samsung 24"></td>
+                        <td class="producto">Monitor Samsung 24"</td>
+                        <td class="descripcion">Monitor IPS 24" Full HD</td>
+                        <td class="numero">15</td>
+                        <td class="numero">20</td>
+                        <td class="numero">18</td>
+                        <td class="numero">53</td>
+                        <td class="dinero">$180.00</td>
+                        <td class="dinero total-ventas">$9,540.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">4</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/teclado4.jfif" alt="Teclado Mecanico"></td>
+                        <td class="producto">Teclado Mecanico</td>
+                        <td class="descripcion">Teclado RGB, switches azules</td>
+                        <td class="numero">25</td>
+                        <td class="numero">30</td>
+                        <td class="numero">28</td>
+                        <td class="numero">83</td>
+                        <td class="dinero">$45.00</td>
+                        <td class="dinero total-ventas">$3,735.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">5</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/mouse5.jfif" alt="Mouse Inalambrico"></td>
+                        <td class="producto">Mouse Inalambrico</td>
+                        <td class="descripcion">Mouse optico ergonomico</td>
+                        <td class="numero">30</td>
+                        <td class="numero">35</td>
+                        <td class="numero">40</td>
+                        <td class="numero">105</td>
+                        <td class="dinero">$25.00</td>
+                        <td class="dinero total-ventas">$2,625.00</td>
+                    </tr>
+
+                    <!-- Categoria: Telefonia -->
+                    <tr>
+                        <td rowspan="4" class="categoria">Telefonia<small>4 productos</small></td>
+                        <td class="numero">6</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/i phone 6.jfif" alt="iPhone 14"></td>
+                        <td class="producto">iPhone 14</td>
+                        <td class="descripcion">Smartphone 128GB</td>
+                        <td class="numero">10</td>
+                        <td class="numero">12</td>
+                        <td class="numero">15</td>
+                        <td class="numero">37</td>
+                        <td class="dinero">$850.00</td>
+                        <td class="dinero total-ventas">$31,450.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">7</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/samsung 7.jfif" alt="Samsung Galaxy A54"></td>
+                        <td class="producto">Samsung Galaxy A54</td>
+                        <td class="descripcion">Smartphone 128GB</td>
+                        <td class="numero">18</td>
+                        <td class="numero">20</td>
+                        <td class="numero">22</td>
+                        <td class="numero">60</td>
+                        <td class="dinero">$420.00</td>
+                        <td class="dinero total-ventas">$25,200.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">8</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/audifonos bluetooh 8.jfif" alt="Audifonos Bluetooth"></td>
+                        <td class="producto">Audifonos Bluetooth</td>
+                        <td class="descripcion">Audifonos inalambricos con estuche</td>
+                        <td class="numero">25</td>
+                        <td class="numero">28</td>
+                        <td class="numero">35</td>
+                        <td class="numero">88</td>
+                        <td class="dinero">$60.00</td>
+                        <td class="dinero total-ventas">$5,280.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">9</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/smarwach 9.jfif" alt="Smartwatch"></td>
+                        <td class="producto">Smartwatch</td>
+                        <td class="descripcion">Reloj inteligente con sensor de salud</td>
+                        <td class="numero">12</td>
+                        <td class="numero">15</td>
+                        <td class="numero">18</td>
+                        <td class="numero">45</td>
+                        <td class="dinero">$120.00</td>
+                        <td class="dinero total-ventas">$5,400.00</td>
+                    </tr>
+
+                    <!-- Categoria: Electrodomesticos -->
+                    <tr>
+                        <td rowspan="4" class="categoria">Electrodomesticos<small>4 productos</small></td>
+                        <td class="numero">10</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/refrigeradora 10.jfif" alt="Refrigeradora LG"></td>
+                        <td class="producto">Refrigeradora LG</td>
+                        <td class="descripcion">Refrigeradora 280 litros</td>
+                        <td class="numero">6</td>
+                        <td class="numero">8</td>
+                        <td class="numero">10</td>
+                        <td class="numero">24</td>
+                        <td class="dinero">$780.00</td>
+                        <td class="dinero total-ventas">$18,720.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">11</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/labadora 11.jfif" alt="Lavadora Samsung"></td>
+                        <td class="producto">Lavadora Samsung</td>
+                        <td class="descripcion">Lavadora 12 kg</td>
+                        <td class="numero">8</td>
+                        <td class="numero">10</td>
+                        <td class="numero">12</td>
+                        <td class="numero">30</td>
+                        <td class="dinero">$550.00</td>
+                        <td class="dinero total-ventas">$16,500.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">12</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/microndas 12.jfif" alt="Microondas Oster"></td>
+                        <td class="producto">Microondas Oster</td>
+                        <td class="descripcion">Microondas 25 litros</td>
+                        <td class="numero">12</td>
+                        <td class="numero">15</td>
+                        <td class="numero">18</td>
+                        <td class="numero">45</td>
+                        <td class="dinero">$130.00</td>
+                        <td class="dinero total-ventas">$5,850.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">13</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/licuadora 13.jfif" alt="Licuadora Philips"></td>
+                        <td class="producto">Licuadora Philips</td>
+                        <td class="descripcion">Licuadora 600W</td>
+                        <td class="numero">20</td>
+                        <td class="numero">25</td>
+                        <td class="numero">28</td>
+                        <td class="numero">73</td>
+                        <td class="dinero">$70.00</td>
+                        <td class="dinero total-ventas">$5,110.00</td>
+                    </tr>
+
+                    <!-- Categoria: Hogar y oficina -->
+                    <tr>
+                        <td rowspan="4" class="categoria">Hogar y oficina<small>4 productos</small></td>
+                        <td class="numero">14</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/silla de oficina 14.jfif" alt="Silla de Oficina"></td>
+                        <td class="producto">Silla de Oficina</td>
+                        <td class="descripcion">Silla ergonomica</td>
+                        <td class="numero">10</td>
+                        <td class="numero">12</td>
+                        <td class="numero">15</td>
+                        <td class="numero">37</td>
+                        <td class="dinero">$110.00</td>
+                        <td class="dinero total-ventas">$4,070.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">15</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/escritorio 15.jfif" alt="Escritorio"></td>
+                        <td class="producto">Escritorio</td>
+                        <td class="descripcion">Escritorio para oficina 120cm</td>
+                        <td class="numero">8</td>
+                        <td class="numero">10</td>
+                        <td class="numero">12</td>
+                        <td class="numero">30</td>
+                        <td class="dinero">$150.00</td>
+                        <td class="dinero total-ventas">$4,500.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">16</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/estanteria 16.jfif" alt="Estanteria"></td>
+                        <td class="producto">Estanteria</td>
+                        <td class="descripcion">Estanteria de 5 niveles</td>
+                        <td class="numero">12</td>
+                        <td class="numero">15</td>
+                        <td class="numero">18</td>
+                        <td class="numero">45</td>
+                        <td class="dinero">$90.00</td>
+                        <td class="dinero total-ventas">$4,050.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">17</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/lampara led 17.jfif" alt="Lampara LED"></td>
+                        <td class="producto">Lampara LED</td>
+                        <td class="descripcion">Lampara de escritorio LED</td>
+                        <td class="numero">18</td>
+                        <td class="numero">22</td>
+                        <td class="numero">25</td>
+                        <td class="numero">65</td>
+                        <td class="dinero">$35.00</td>
+                        <td class="dinero total-ventas">$2,275.00</td>
+                    </tr>
+
+                    <!-- Categoria: Gaming -->
+                    <tr>
+                        <td rowspan="3" class="categoria">Gaming<small>3 productos</small></td>
+                        <td class="numero">18</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/ps5 18.jfif" alt="Consola PlayStation 5"></td>
+                        <td class="producto">Consola PlayStation 5</td>
+                        <td class="descripcion">Consola PS5 1TB</td>
+                        <td class="numero">5</td>
+                        <td class="numero">8</td>
+                        <td class="numero">10</td>
+                        <td class="numero">23</td>
+                        <td class="dinero">$550.00</td>
+                        <td class="dinero total-ventas">$12,650.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">19</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/control xbox 19.jfif" alt="Control Xbox"></td>
+                        <td class="producto">Control Xbox</td>
+                        <td class="descripcion">Control inalambrico Xbox Series</td>
+                        <td class="numero">18</td>
+                        <td class="numero">22</td>
+                        <td class="numero">25</td>
+                        <td class="numero">65</td>
+                        <td class="dinero">$70.00</td>
+                        <td class="dinero total-ventas">$4,550.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="numero">20</td>
+                        <td><img class="imagen-producto" src="imagenes mercansia/audifonos 20.jfif" alt="Headset Gamer"></td>
+                        <td class="producto">Headset Gamer</td>
+                        <td class="descripcion">Audifonos gamer con microfono</td>
+                        <td class="numero">20</td>
+                        <td class="numero">28</td>
+                        <td class="numero">30</td>
+                        <td class="numero">78</td>
+                        <td class="dinero">$90.00</td>
+                        <td class="dinero total-ventas">$7,020.00</td>
+                    </tr>
+
+                    <!-- Fila de totales generales -->
+                    <tr>
                         <td colspan="5">Total general</td>
-                        <td>277</td>
-                        <td>345</td>
-                        <td>396</td>
-                        <td>1,018</td> 
-                        <td>-</td>
-                        <td>$210,025.00</td>
-                     </tr>
-                     <tr>
-                            <td colspan="5">Promedio de ventas por mes</td>
-                        <td>55</td>
-                        <td>69</td>
-                        <td>79</td>
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>$42,005.00</td>
-                     </tr>
-            </thead>
+                        <td class="numero">277</td>
+                        <td class="numero">345</td>
+                        <td class="numero">396</td>
+                        <td class="numero">1,018</td>
+                        <td class="dinero">-</td>
+                        <td class="dinero total-ventas">$210,025.00</td>
+                    </tr>
 
-        </table>
+                    <!-- Fila de promedios por mes -->
+                    <tr>
+                        <td colspan="5">Promedio de ventas por mes</td>
+                        <td class="numero">55</td>
+                        <td class="numero">69</td>
+                        <td class="numero">79</td>
+                        <td class="numero">-</td>
+                        <td class="dinero">-</td>
+                        <td class="dinero total-ventas">$42,005.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    </div>
+        <!-- Nota que le avisa al usuario que puede deslizar en pantallas chicas -->
+        <p class="nota">En pantallas pequenas, desliza horizontalmente para consultar todas las columnas.</p>
 
-
-    <!--Categoria-->
-
+        <!-- Enlace con apariencia de boton para volver arriba -->
+        <a class="enlace-home" href="#">Volver al inicio</a>
+    </main>
 </body>
 
 </html>
