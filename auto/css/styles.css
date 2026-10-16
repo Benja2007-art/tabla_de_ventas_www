@@ -1,0 +1,119 @@
+/* EXAMEN SEGUNDO PARCIAL - DESARROLLO WEB I
+   Estudiantes: _____Jeremias Aguiar-Josue Solano____________________
+   Curso: ___________Segundo de Desarrollo de software____________________
+
+   INSTRUCCIONES: Implementar aquí TODO el CSS.
+   No modificar la estructura HTML ni los nombres de las clases.
+
+   1. Estilos generales, tipografía y contenedor
+   2. Header y navegación (Flexbox)
+   3. Portada principal (Flexbox)
+   4. Catálogo de 6 vehículos (CSS Grid)
+   5. Tarjetas, botones, hover y sombras
+   6. Nosotros y beneficios (Grid / Flexbox)
+   7. Formulario y estados :focus
+   8. Footer
+   9. Media queries: tablet <= 900px; móvil <= 600px
+*/
+
+
+
+/*cabecera de la pagina web*/
+.encabezado {
+   background-color: whitesmoke;
+   justify-content: space-between;
+   position: sticky;
+   top: 0;
+}
+
+/*Cambiando el color al encabezado*/
+.encabezado a {
+   color: #1E2c7d;
+}
+
+/*Agregandi los links de navegacion al centro*/
+.menu{
+   padding: 0 10px;
+   gap: 20px;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+
+/*Quitando decoracion de los links*/
+.menu a{
+  text-decoration: none;
+}
+
+/*Agregando Hover de interaccion*/
+.menu a:hover{
+  color: gold;
+}
+
+/*Agregando estilo y efecto al botom*/
+.boton-cabecera {
+   background-color: goldenrod;
+   border-radius: 5px;
+   text-decoration: none;
+   padding: 2px 0 2px;
+}
+
+/*Agregando interaccion al botom*/
+.boton-cabecera:hover {
+   background-color: #1E2c7d;
+   text-align: right;
+}
+
+/*Modificando la clase hero para el margin el color del background y fuente*/
+.hero {
+   margin: 20px 0 20px;
+   background-color: #18224a;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Cambiando el color de la clase etiqueta*/
+.etiqueta {
+   color: rgb(219, 187, 4);
+}
+
+/*Modificando el texto principal, color y tamaño de fuente*/
+#titulo-principal {
+   color: whitesmoke;
+   font-size: 100px;
+}
+
+/*Cambiando el color del p en la clase hero*/
+.hero p {
+   color:whitesmoke;
+}
+
+/*Dando bordes redondeado sombra de atras y tamaño*/
+.hero img {
+   height: 300px;
+   border-radius: 5px;
+   box-shadow: 8px 9px 24px #000;
+   margin: 0 auto;
+   display: grid;
+   justify-content: end;
+   align-items: center;
+}
+
+/*Dando forma de boton al los links*/
+.boton {
+   background-color: goldenrod;
+   text-decoration: none;
+   border-radius: 5px;
+   padding: 20px 20px 20px;
+}
+
+.boton:hover {
+   background-color: #18224a;
+}
+
+.etiqueta{
+ max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
