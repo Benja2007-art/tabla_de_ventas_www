@@ -112,8 +112,191 @@
 }
 
 .etiqueta{
- max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+/*centrar texto etiqueta*/
+.etiqueta{
+display: block;
+text-align: center;
+color: #FFC96E;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+margin-bottom: 0;
+}
+/*centrar titulo de catalogo*/
+#titulo-vehiculos{
+display: block;
+text-align: center;
+color: #0D0E57;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+margin-top: 0;
+}
+/*cantrar el texto que esta abjo del titulo catalogo*/
+.seccion-encabezado{
+margin-top: 1;
+text-align: center;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+color: #0D0E57;
 }
 
+.contenedor{
+max-width: 1200px;
+margin: 0 auto;
+width: 100%;
+}
+/*tablas de catalogo*/
+.vehiculos-grid{
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* Fuerza 3 columnas exactas */
+gap: 25px; /* Separacion entre tarjetas */
+
+}
+/*tablas para vehicuos*/
+.vehiculo-card{
+background-color: #ffffff;
+border: 1px solid #e5e7eb;
+border-radius: 12px; /* Curvatura de las esquinas */
+overflow: hidden; /* ¡CRUCIAL! Corta la imagen para que respete la curva */
+display: flex;
+flex-direction: column;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Sombra suave */
+transition: transform 0.3s ease;
+}
+
+.vehiculos-grid img {
+width: 100%;
+height: 220px; /* Altura fija para que todas sean iguales */
+object-fit: cover; /* Se adapta sin deformarse */
+display: block;
+}
+
+.vehiculo-info{
+padding: 20px;
+display: flex;
+flex-direction: column;
+flex-grow: 1; /* Hace que el contenedor crezca y el boton quede abajo */
+color: #333333; /* Color de texto base oscuro (evita que se vuelva invisible) */
+}
+
+.vehiculo-info h3 {
+font-size: 20px;
+color: #101829;
+margin: 0 0 10px 0;
+}
+
+.vehiculo-anio{
+color: #8a9fc9;
+font-size: 13px;
+margin-bottom: 5px;
+}
+
+.vehiculo-precio{
+font-size: 22px;
+font-weight: 700;
+color: #e47c05; /* Color naranja */
+margin: 0 0 15px 0;
+}
+
+.vehiculo-detalles{
+list-style: none; /* Quita los puntitos de la lista */
+padding: 0;
+margin: 0 0 20px 0;
+display: flex;
+flex-wrap: wrap;
+gap: 8px;}
+
+.vehiculo-detalles li {
+background-color: #f3f4f6; 
+color: #51565c;
+padding: 5px 10px;
+border-radius: 4px;
+font-size: 12px;
+}
+
+/*SECCION 4: NOSOTROS*/
+
+.seccion.nosotros{
+background-color: #ddeeff;
+padding: 80xp 20px;
+} 
+
+.cosotros-grid{
+display: grid;
+grid-template-columns: 1fr 1.2fr;
+gap: 60xp;
+align-items: center;  /*alinea verticalmente al centro el texto y las tarjetas. Ideal cuando una columna es mas alta que la otra */
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.nosotros-texto{
+color: #d19808;   
+font-weight: 700;
+letter-spacing: 1.5;/*añade espacio entre las letras, dando un aspecto mas elegante y moderno */
+font-size: 13px;
+display: block;
+margin-bottom: 15px;
+}
+
+.nosotros-texto h2{
+font-size: 42px; 
+color: #181f2e; 
+line-height: 1.2;   /* controla el espacio entre lineas del titulo. 1.2 lo junta un poco para que se vea mas compacto */
+margin-bottom: 25px;
+}
+
+.nosotros-texto p {
+color: #4d5c75; 
+font-size: 16px;
+line-height: 1.6;   /* NUEVO: Da más espacio entre líneas del párrafo (1.6). Mejora muchísimo la legibilidad */
+margin-bottom: 15px;
+}
+
+.boton-principal {
+  /* A diferencia de 'block', esto permite que el botón solo ocupe el ancho de su texto y fluya con el párrafo */
+display: inline-block; 
+background-color: #c99939; 
+color: #161d29; 
+text-decoration: none; 
+padding: 14px 28px; 
+border-radius: 6px; 
+font-weight: 600;
+margin-top: 20px;
+}
+
+.beneficios-grid{
+display: grid; 
+grid-template-columns: repeat(2, 1fr); 
+gap: 20px; 
+} 
+
+.beneficio{
+background-color: #ffffff; 
+padding: 30px 25px; 
+border-radius: 12px; 
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* NUEVO: Crea una sombra difuminada. El '0 4px' la baja un poco, y el 'rgba' le da transparencia */
+}
+
+.beneficio-icono {
+color: #c99939; 
+font-size: 24px;
+display: block;
+margin-bottom: 15px;
+}
+
+.beneficio h3{
+font-size: 18px;
+color: #161d29; 
+margin-bottom: 10px;
+}
+
+.beneficio p{
+font-size: 14px;
+color: #718096; 
+line-height: 1.5; 
+margin: 0; 
+}
